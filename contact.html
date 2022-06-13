@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact form</title>
+   <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  <style>
+    input[type=text], textarea {
+  width: 100%; 
+  padding: 10px;
+  border: 2px solid #ccc; 
+  border-radius: 15px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 8px;
+  resize: vertical; 
+}
+input[type=submit] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}  
+.container {
+  border-radius: 15px;
+  padding: 0 20px;
+}
+  </style>
+<body>
+  <header>
+     <ul>
+  <li class="list"><a class="active"  href="index.html">Home</a></li>
+  <li class="list"><a href="contact.html">Contact</a></li>
+  <li class="list"><a href="reg.html">Register</a></li>
+  <li class="list"><a href="login.html">Login</a></li>
+</ul> 
+  </header>
+  <main>
+    <h1>Contact me!</h1>
+    <div class="container">
+  <form action="action_page.php">
+    <label for="name">Name</label>
+    <input type="text" id="fname" name="name" placeholder="Your name..">
+  <label for="email">Email</label>
+    <input type="text" id="yremail" name="email" placeholder="Your email..">
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+    </div>
+  </main>
+  <footer>
+    <div id="footer">
+	<p id="copyright">&copy; chekwas</p>
+	<p id="back-top"><a href="#">Back to Top</a></p>
+</div>
+  </footer>
+</body>
+</html>
